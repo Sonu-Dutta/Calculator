@@ -2,7 +2,7 @@
 
 ## Overview
 
-### This is a Project on JavaScript, that performs addition, subtraction, multiplication and division!
+### This is a Project on Html, Css and JavaScript that performs basic operation of calculator
 
 ![](./media/design.png)
 
