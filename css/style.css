@@ -10,7 +10,7 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)),url(/media/bgp.png);
+    background-image: linear-gradient(to left ,#397385,#635f9b);
     display: flex;
     align-items: center;
     justify-content: center;
