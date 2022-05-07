@@ -1,24 +1,21 @@
 *{
+    font-family: 'Sarpanch', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body{
-    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to left ,#397385,#635f9b);
+    background-color: rgb(246, 228, 204);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .calculator{
     width: 20rem;
-    height: 32.5rem;
-    background-color: rgb(233, 233, 248);
+    height: 33rem;
+    padding:0 .6rem;
+    background-color: rgba(36, 79, 63, 0.8);
     margin: 0 auto;
     position: relative;
     border-radius: 5px;
@@ -33,40 +30,50 @@ body{
     margin: 0 20px;
     padding-top: 20px;
     font-size: 15px;
-    color: #919191;
+    color: #fcfcfc;
 }
 #output{
+    background-color: rgb(206, 222, 164);
     text-align: right;
     height: 60px;
-    margin: 10px 20px;
+    margin: 10px 8px;
     font-size: 30px;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    box-shadow: 2px 1px 1px 3px black;
 }
 #keyboard{
     height: 400px;
+    margin-top: 1.4rem;
 }
-.operator,.number,.empty{
-    width: 50px;
+.operator,.number{
+    width: 62px;
     height: 50px;
-    margin: 15px;
+    margin: 9px;
     float: left;
-    border-radius: 50%;
     border-width: 0;
     font-weight: bold;
     font-size: 1.5rem;
-}
-.number{
+    box-shadow: 2px 3px black;
     border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.empty{
-    background-color: rgb(233, 233, 248);
-}
+
 .number,.operator{
     cursor: pointer;
 }
 .operator{
     font-size: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(211, 70, 98);
+    color: white;
+    
+}
+.number,.dot{
+    background-color: rgb(70, 81, 77);
+    color: white;
+}
+.op{
+    background-color: rgb(168, 155, 155);
+    color: white;
 }
 .operator:active, .number:active{
     font-size: 1.3rem;
@@ -74,31 +81,16 @@ body{
 .operator:focus,.number:focus,.empty:focus{
     outline: 0;
 }
-button:nth-child(4){
-    background-color: #77cec9;
-}
-button:nth-child(16){
-    background-color: #ebb85b;
-}
-button:nth-child(20){
-    background-color: #f08080;
-}
-button:nth-child(8){
-    background-color: #a3b1e4;
-}
-button:nth-child(12){
-    background-color: #bda3d6;
-}
-button:nth-child(3){
-    background-color: #7ec95b;
-}
-button:nth-child(2){
-    background-color: #cedb55;
-}
-button:nth-child(1){
-    background-color: #e69dc5;
-}
 
 button:active{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.equal{
+    text-transform: uppercase;
+    border-radius: 2px;
+    width: 8.7rem;
+    background-color: orange;
+    color: white;
+    text-shadow: 1px 2px 3px black;
 }
